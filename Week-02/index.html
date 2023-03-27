@@ -1,110 +1,141 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>"Mega Rocket Gym"</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
     </head>
-<header>
-    <h1>MEGA ROCKET S.A.</h1>
-    <a>
-        <button><img src="../Assets/Images/boton login.png"></button>
-        <button><img src="../Assets/Images/boton register.png"></button>    
-    </a>
-    <aside>
-        <nav>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">ACTIVITIES</a></li>
-            <li><a href="#">MEMBERSHIPS</a></li>
-            <li><a href="#">OUR STORY</a></li>
-        </ul>  
-        </nav>  
-    </aside> 
-</header>
-<body>
-    <h2>DON'T SIT GET FIT</h2>
-        <img src="../Assets/Images/dontsit2.png"/>
-        <p>Your best version is waiting for you, join Mega Rocket Gym today
-           In this app you can choose our best personal trainers and the best classes
-           and have a bunch of privileges with our different memberships
-        </p>
-    <section id="FEATURES">    
-        <h3>FEATURES</h3>
-        <ul>
-            <li><a href="#">RESERVATION</a>
-                <p>Choose your favorite class and ensure your place</p>
-                <img src="../Assets/Images/reservation-pic.png"/></li>
-            <li><a href="#">SCHEDULE</a>
-                <p>Monday to saturday 08 am till 08 pm</p>
-                <img src="../Assets/Images/schedule.jpg"/></li>
-            <li><a href="#">MEMBERSHIPS</a>
-                <p>Pick which one is best for you</p>
-                <img src="../Assets/Images/membership.jpg"/></li>
-            <li><a href="#">CONTACT AND SUGGESTIONS</a>
-                <p>Your opinion is important to us, it helps us improve</p>
-                <img src="../Assets/Images/conttact.png"/></li>
-        </ul> 
-    </section>
-    <section id="CONTACT US">
-        <h3>CONTACT US</h3>
-        <form>
-            <label>Name</label><input type="text">
-            <label>Surname</label><input type="text">
-            <label>Email</label> <input type="email">
-            <label>Contac Reason</label> 
-                <select>
-                    <option value="I want to know the memberships and costs">I want to know the memberships and costs</option>
-                    <option value="I want to make a query or suggestion">I want to make a query or suggestion</option>
-                    <option value="I want to make a claim">I want to make a claim</option>
-                </select>
-            <label>Message</label><input type="text">
-            <button>Send</button>
-        </form>
-    </section>  
-    <section id="ACTIVITIES">
-        <h3>ACTIVITIES</h3>
-        <ul>
-            <li>CROSSFIT</li>
-                <img src="../Assets/Images/Crossfit.jpg"/>
-            <li>BOX</li>
-                <img src="../Assets/Images/Box.png"/>
-            <li>FUNTIONAL</li>
-                <img src="../Assets/Images/functional.jpg"/>
-            <li>SPINNING</li>
-                <img src="../Assets/Images/Spinning.png"/>
-            <li>FITNESS</li>
-                <img src="../Assets/Images/fitness.jpg"/>
-        </ul>
-    </section>
-    <section id="MEMBERSHIPS">
-        <h3>MEMBERSHIPS</h3>
-        <ul>
-            <li>ONLY CLASSES MEMBERSHIPS</li>
-                <p>Free access to classes with registration</P>
-            <li>CLASSIC MEMBERSHIP</li>
-                <p>Free access to the gym</p>
-                <p>Personalized Monitoring & Coaching</p>
-            <li>BLACK MEMBERSHIP</li>
-                <p>Free access to the gym</p>
-                <p>Free access to classes with registration</p>
-                <p>Personalized Monitoring & Coaching</p>
-        </ul>
-    </section>
-    <section>
-        <h3>OUR STORY</h3>
-        <p>We are one of the oldest but most modern gyms. 50 trainers work in MR GYM and more than 200 people 
-            come to our place everyday. We are dedicated to helping you improve your quality of life in a fun 
-            and active way
-        </p>
-    </section>
-    <footer>
-        <img src="../Assets/Images/instagram-logo.png"/>
-        <p>@ROCKETGYM</p>
-        <img src="../Assets/Images/whatsapp-logo.png"/>
-        <p>+1 408 741 2369</p>
-        <img src="../Assets/Images/facebook-logo.png"/>
-        <p>Mega rocket GYM</p>
-        <p>MEGA ROCKET SA All rights reserved. 2023©</p>
-    </footer>
-</body>
+    <body>
+    <header>
+        <img src="../Assets/Images/logo-RR 1.png" alt="Logo RR">
+        <h2>MEGA ROCKET S.A.</h2>
+        <a>
+            <button type="button"><img src="../Assets/Images/boton login.png" alt="Login"></button>
+            <button type="button"><img src="../Assets/Images/boton register.png" alt="Register"></button>    
+        </a>
+        <aside>
+            <nav>
+            <ul>
+                <li><a href="#index.html">HOME</a></li>
+                <li><a href="#sectionidfeatures">FEATURES</a></li>
+                <li><a href="#sectionidcontacus">CONTACT US</a></li>
+                <li><a href="#sectionidactivies">ACTIVITIES</a></li>
+                <li><a href="#sectionidmemberships">MEMBERSHIPS</a></li>
+                <li><a href="#sectionourstory">OUR STORY</a></li>
+                <li><img src="../Assets/Images/mapa 1.png" alt="Adress">
+                    <p>Av. Pellegrini  3535</p>
+                </li>
+                <li><img src="../Assets/Images/ring-phone 1.png" alt="Phone">
+                    <p>+464 206 96</p>
+                </li>
+            </ul>  
+            </nav>  
+        </aside> 
+    </header>
+        <h1>DON'T SIT GET FIT</h1>
+            <img src="../Assets/Images/dontsit2.png" alt="Don't Sit Get Fit">
+            <p>Your best version is waiting for you, join Mega Rocket Gym today
+            In this app you can choose our best personal trainers and the best classes
+            and have a bunch of privileges with our different memberships
+            </p>
+        <section id="FEATURES">    
+            <h3>FEATURES</h3>
+            <ul>
+                <li><a href="#">RESERVATION</a>
+                    <p>Choose your favorite class and ensure your place</p>
+                    <img src="../Assets/Images/reservation-pic.png" alt="Reservation">
+                </li>
+                <li><a href="#">SCHEDULE</a>
+                    <p>Monday to saturday 08 am till 08 pm</p>
+                    <img src="../Assets/Images/schedule.jpg" alt="Schedule">
+                </li>
+                <li><a href="#">MEMBERSHIPS</a>
+                    <p>Pick which one is best for you</p>
+                    <img src="../Assets/Images/membership.jpg" alt="Membership">
+                </li>
+                <li><a href="#">CONTACT AND SUGGESTIONS</a>
+                    <p>Your opinion is important to us, it helps us improve</p>
+                    <img src="../Assets/Images/conttact.png" alt="Conttact">
+                </li>
+            </ul> 
+        </section>
+        <section id="CONTACTUS">
+            <h3>CONTACT US</h3>
+            <form>
+                <label>Name</label>
+                <input type="text" value="Name">
+                <label>Surname</label>
+                <input type="text" value="Surname">
+                <label>Email</label>
+                <input type="email" value="Email">
+                <label>Contac Reason</label> 
+                    <select>
+                        <option value="Choose one">Choose one</option>
+                        <option value="I want to know the memberships and costs">I want to know the memberships and costs</option>
+                        <option value="I want to make a query or suggestion">I want to make a query or suggestion</option>
+                        <option value="I want to make a claim">I want to make a claim</option>
+                    </select>
+                <label>Message</label>
+                <input type="text" value="Message">
+                <button type="button">Send</button>
+            </form>
+        </section>  
+        <section id="ACTIVITIES">
+            <h3>ACTIVITIES</h3>
+            <ul>
+                <li>CROSSFIT</li>
+                    <img src="../Assets/Images/Crossfit.jpg" alt="Crossfit">
+                <li>BOX</li>
+                    <img src="../Assets/Images/Box.png" alt="Box">
+                <li>FUNCTIONAL</li>
+                    <img src="../Assets/Images/functional.jpg" alt="Functional" >
+                <li>SPINNING</li>
+                    <img src="../Assets/Images/Spinning.png" alt="Spinning">
+                <li>FITNESS</li>
+                    <img src="../Assets/Images/fitness.jpg" alt="Fitness">
+            </ul>
+        </section>
+        <section id="MEMBERSHIPS">
+            <h3>MEMBERSHIPS</h3>
+            <ul>
+                <li>
+                    <h4>ONLY CLASSES MEMBERSHIPS</h4>
+                    <p>Free access to classes with registration</p>
+                    <p>Schedule view</p>
+                </li>
+                <li>
+                    <h4>CLASSIC MEMBERSHIP</h4>
+                    <p>Free access to the gym</p>
+                    <p>Personalized Monitoring & Coaching</p>
+                    <p>Schedule view</p>
+                </li>    
+                <li>
+                    <h4>BLACK MEMBERSHIP</h4>
+                    <p>Free access to the gym</p>
+                    <p>Free access to classes with registration</p>
+                    <p>Personalized Monitoring & Coaching</p>
+                    <p>Schedule view</p>
+                </li>
+            </ul>
+        </section>
+        <section id="OurStory">
+            <h3>OUR STORY</h3>
+            <p>We are one of the oldest but most modern gyms. 50 trainers work in MR GYM and more than 200 people 
+                come to our place everyday. We are dedicated to helping you improve your quality of life in a fun 
+                and active way
+            </p>
+        </section>
+        <footer>
+            <a href="https://msng.link/o/?radium.rocket=ig">@ROCKETGYM</a>
+                <img src="../Assets/Images/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://web.whatsapp.com/">+1 408 741 2369</a>
+                <img src="../Assets/Images/whatsapp-logo.png" alt="WhatsApp">
+            <a href="https://es-la.facebook.com">Mega rocket GYM</a>
+                <img src="../Assets/Images/facebook-logo.png" alt="Facebook">
+            <p>MEGA ROCKET SA All rights reserved. 2023©</p>
+        </footer>
+    </body>
 </html>
