@@ -1,9 +1,10 @@
 # Become Software Professional 2023
 ## Mega Rocket S.A.
+The proyect is to make a web system for Mega Rocket Gym, where they can administer the coaches, activities, schedule and memberships, as they may even be asociate online.
 ### Week 01
-Do the screenflow of diferent sections in Figma using the UI kit Radium Rocket's. The objetive was doing a web system for a Gym, where they will can administrate the trainers, activities, schedule and memberships.
+First, we did screenflows of diferent sections of the Gym in Figma using the UI kit Radium Rocket's. 
 ### Week 02
-Do a HTML document with the landing screenflow that we did in week 01, adding all the information neccesary, like tittles, subtitles, images, list and text. Then upload the progress in GitHub repository. 
+In this step, we did a GitHub repository thats include a HTML document with the landing screenflow that we did in week 01, adding all the information neccesary, like tittles, subtitles, images, lists and text.
 ## Tech Stack
 **Client:** HTML 5
 ## 🔗 Links
