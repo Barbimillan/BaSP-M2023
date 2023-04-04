@@ -21,6 +21,7 @@ body {
     top: 110px;
     left: 10px;
 }
+
 .container-logo img{
     position: absolute;
     top: 10px;
@@ -134,7 +135,7 @@ body {
     color:white
 }
 
-.tittle {
+.tittle-featu {
     position: relative;
     top: 60px;
     left: 300px;
@@ -142,7 +143,7 @@ body {
     font-size: 100px;
 }
 
-.color-letter {
+.color-res {
     position: relative;
     top: 75px;
     color: #E3EC39;
@@ -365,10 +366,6 @@ body {
     font-size: 100px;
 }
 
-.container-act {
-    display: inline-block;
-}
-
 .box-cross {
     position:relative;
     bottom: 100px;
@@ -489,6 +486,7 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+
 .box-classicmember {
     position: relative;
     bottom: 480px;

@@ -10,6 +10,7 @@ First, we did screenflows of diferent sections of the Gym in Figma using the UI 
 In this step, we did a GitHub repository that include a HTML document with the landing screenflow that we did in week 01, adding all the information neccesary, like tittles, subtitles, images, lists and text.
 
 ### Week 03
+This week, we gave the style, with a CSS external file, to the HTML document that we did in the second week. 
 
 ## Tech Stack
 **Client:** HTML 5
