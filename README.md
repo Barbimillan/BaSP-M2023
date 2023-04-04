@@ -7,7 +7,6 @@ First, we did screenflows of diferent sections of the Gym in Figma using the UI 
 In this step, we did a GitHub repository thats include a HTML document with the landing screenflow that we did in week 01, adding all the information neccesary, like tittles, subtitles, images, lists and text.
 ## Tech Stack
 **Client:** HTML 5
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Barbimillan/BaSP-M2023.git)
+### Week 03
 ## Authors
 Barbara Millan

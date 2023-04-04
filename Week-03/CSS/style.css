@@ -1,0 +1,294 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-header { 
+    background-color: #323232;
+    width: 1512px;
+    height: 188px;
+}
+
+.container-logo{
+    position: relative;
+    color: #E3EC39;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.container-logo h1{
+    position: absolute;
+    top: 110px;
+    left: 10px;
+}
+.container-logo img{
+    position: absolute;
+    top: 10px;
+    left: 90px;
+}
+
+.container-login {
+    position: absolute;
+    left: 1100px;
+    top: 70px;
+}
+
+.container-login a {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.container-login img {
+    position: relative;
+    top: 10px;
+    width: 38px;
+    height: 38px;
+}
+
+.container-login .button {
+    background-color: white;
+    margin-left:30px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.container-aside {
+    position:absolute;
+    width: 336px;
+    height: 5903px;
+    background-color: #D5DD3C; 
+}
+
+.container-aside ul li {
+    text-align: center;
+    padding: 20px;
+}
+
+.container-aside ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.container-info {
+    margin-top: 5000px;
+    margin-left: 20px;
+}
+
+.container-phone-addres {
+    display: block;
+    position: relative;
+    padding: 10px; 
+}
+
+.container-phone-addres img {
+    position: relative;
+}
+
+.container-phone-addres p {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-main {
+    margin-left: 336px;
+    background-color: #979797;
+}
+
+.container-dontsit {
+    height: 864px;
+    width: 1176px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/DontsitgetFit.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-dontsit h2 {
+    position: relative;
+    top: 90px;
+    left: 250px;
+    color: white;
+    font-size: 100px;
+}
+
+.getfitcolor {
+    position: relative;
+    top: 80px;
+    color: #E3EC39;
+    font-size: 100px;
+}
+
+.container-dontsit p {
+    position:relative;
+    left: 190px;
+    top:320px;
+    width: 900px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color:white
+}
+
+.tittle {
+    position: relative;
+    top: 60px;
+    left: 300px;
+    color: white;
+    font-size: 100px;
+}
+
+.color-letter {
+    position: relative;
+    top: 75px;
+    color: #E3EC39;
+    font-size: 100px;
+}
+
+.container-features {
+    position: relative;
+    top: 150px;
+    left: 110px;
+}
+
+.box-1 {
+    width: 451px;
+    height: 288px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Reservation.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #E3EC39;
+    font-size: 50px;
+}
+
+.box-1 p {
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    top: 20px;
+    text-align: center;
+}
+
+.p1 {
+    position: relative;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.box-2 {
+    position: relative;
+    bottom: 305px;
+    left: 500px;
+    width: 451px;
+    height: 288px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/schedule.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #E3EC39;
+    font-size: 50px;
+}
+
+.box-2 p {
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    top: 20px;
+    text-align: center;
+}
+
+.p2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.box-3 {
+    position: relative;
+    width: 451px;
+    height: 288px;
+    bottom: 250px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/membership.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #E3EC39;
+    font-size: 50px;
+}
+
+.box-3 p {
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    top: 20px;
+    text-align: center;
+}
+
+.p3 {
+    position: relative;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.box-4 {
+    position: relative;
+    bottom: 560px;
+    left: 500px;
+    width: 451px;
+    height: 288px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/conttact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #E3EC39;
+    font-size: 50px;
+}
+
+.box-4 p {
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    top: 20px;
+    text-align: center;
+}
+
+.p4 {
+    position: relative;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.tittlecontact {
+    position: relative;
+    bottom: 350px;
+    left: 300px;
+    color: white;
+    font-size: 100px;
+}
+
+.color-us {
+    position: relative;
+    right: 40px;
+    top: 80px;
+    color: #E3EC39;
+    font-size: 100px;
+}
+
+.container-contact {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+    bottom: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: block;
+}
+
+.container-form {
+    display: inline-block;
+}
