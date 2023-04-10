@@ -1,0 +1,36 @@
+.container-header {
+    width: 390px;
+    height: 154px;
+    background-color: #323232 ;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+.container-aside {
+    display: none;
+    width: 390px;
+    height: 650px;
+    background-color: #212121;
+}
+
+.container-login {
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.container-aside a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration: none;
+}

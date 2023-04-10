@@ -1,0 +1,171 @@
+.container-main {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    background-color: #535353;
+}
+
+.container-dontsit {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 690px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/dontsit-iphone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-dontsit h1 {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 20%;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.get-fit {
+    display: flex;
+    justify-content: end;
+    margin-left: 10%;
+    color: #E3EC39;
+    font-size: 60px;
+}
+
+.container-dontsit p {
+    position: relative;
+    text-align: center;
+    margin: 10%;
+    color: white;
+    font-size: 20px;
+}
+
+.tittle-features {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.tittle-features span {
+    margin-left: 55%;
+    color: #E3EC39;
+    font-size: 5rem;
+}
+
+.container-features ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container-features li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #E3EC39;
+    font-size: 40px;
+    text-align: center;
+}
+
+.box-reservation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Reservation.png");
+}
+
+.box-schedule {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/schedule.jpg"); ;
+}
+
+.box-memberships {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/membership.jpg");
+}
+
+.box-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/conttact.png");;
+}
+
+.description-features {
+    color: #ffffff;
+    font-size: 1.2rem;    
+}
+
+.tittle-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.tittle-contact span {
+    margin-left: 70%;
+    color: #E3EC39;
+    font-size: 5rem;
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 355px;
+    height: 626px;
+    bottom: 250px;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+    border: solid #97979700;
+    border-radius: 30px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+    gap: 1rem;
+}
+
+.container-form input {
+    width: 292px;
+    height: 20px;
+    border-radius: 5px;
+    background-color:#E0E0E0;
+}
+
+.container-form select {
+    width: 292px;
+    height: 25px;
+    border-radius: 5px;
+    background-color:#E0E0E0;
+}
+
+.container-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    gap: 1rem;
+}
+
+.container-message input {
+    display: flex;
+    width: 292px;
+    height: 132px;
+    border-radius: 5px;
+    background-color:#E0E0E0
+}
+
+.button-send {
+    margin: auto;
+    width: 74px;
+    height: 34px;
+    border:solid #97979700;
+    border-radius: 5px;
+    background-color: #E3EC39;
+}
