@@ -3,3 +3,22 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.container-tittles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.container-tittles span {
+    position: relative;
+    float: right;
+    top: 3rem;
+    right: 1rem;
+    color: #E3EC39;
+    font-size: 60px;
+}

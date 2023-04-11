@@ -7,7 +7,7 @@
     gap: 3rem;
 }
 
-.container-info{
+.container-info {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -82,14 +82,8 @@
         color: #ffffff;
     }
 
-    .instagram {
-        display: flex;
-        flex-direction: row;
-    }
-
     .copyright {
         padding-bottom: 0%;
         color: #ffffff;
     }
 }
-    
