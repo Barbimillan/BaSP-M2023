@@ -1,36 +1,57 @@
 .container-header {
-    width: 390px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 154px;
+    padding: 0 30px;
     background-color: #323232 ;
 }
 
-.container-logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5%;
-}
-
-.container-aside {
+.container-logo p {
     display: none;
-    width: 390px;
-    height: 650px;
-    background-color: #212121;
+    color: #E3EC39;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.container-login {
+.burguer-button {
     display: flex;
-    padding: 5%;
-    justify-content: space-between;
-    text-transform: uppercase;
+    align-items: end;
 }
 
-.container-aside a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    font-size: 35px;
-    color: #ffffff;
-    text-decoration: none;
+.container-login-header {
+    display: none
+} 
+
+@media screen and (min-width:1024px) {
+    .container-logo p {
+        display: block;
+    }
+
+    .container-login-header {
+        display: block;    
+    }
+
+    .button-login {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 164px;
+        height: 66px;
+        border-radius: 10px;
+        background-color: white; 
+        color: #000000;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .button-login img {
+        width: 38px;
+        height: 38px; 
+    }
+
+    .burguer-button {
+        display: none;
+    }    
 }

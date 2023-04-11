@@ -1,41 +1,73 @@
 .container-main {
     display: flex;
-    flex-direction: column;
-    width: 390px;
+    width: 100%;
     background-color: #535353;
+}
+
+.container-aside {
+    display: none;
+    width: 20%;
+    background-color: #212121;
+}
+
+.container-login {
+    display: none;
+    padding: 5%;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.container-aside a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container-sections {
+    width: 100%;
 }
 
 .container-dontsit {
     display: flex;
     flex-direction: column;
-    width: 390px;
+    justify-content: space-around;
+    align-items: center;
     height: 690px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/dontsit-iphone.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.container-dontsit h1 {
+.container-tittles {
     display: flex;
     flex-direction: column;
-    margin: 5%;
-    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tittles h1 {
     color: #ffffff;
     font-size: 60px;
 }
 
-.get-fit {
-    display: flex;
-    justify-content: end;
-    margin-left: 10%;
+.container-tittles span {
+    position: relative;
+    float: right;
+    top: 3rem;
+    right: 1rem;
     color: #E3EC39;
     font-size: 60px;
 }
 
-.container-dontsit p {
-    position: relative;
+.container-text-home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     text-align: center;
-    margin: 10%;
     color: white;
     font-size: 20px;
 }
@@ -56,8 +88,10 @@
 
 .container-features ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
     gap: 2rem;
 }
 
@@ -99,7 +133,7 @@
 .tittle-contact {
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 10%;
     color: #ffffff;
     font-size: 5rem;
 }
@@ -114,7 +148,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 355px;
+    width: 80%;
     height: 626px;
     bottom: 250px;
     padding-bottom: 1rem;
@@ -127,7 +161,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10%;
     gap: 1rem;
 }
 
@@ -168,4 +201,188 @@
     border:solid #97979700;
     border-radius: 5px;
     background-color: #E3EC39;
+}
+
+.tittle-activities {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.tittle-activities span {
+    margin-left: 45%;
+    color: #E3EC39;
+    font-size: 5rem;
+}
+
+.container-activities p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 250px;
+    margin: 5%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.box-cross {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Crossfit.jpg");
+}
+
+.box-box {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Box.png");
+}
+
+.box-funct {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/functional.jpg");
+}
+
+.box-spinn {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Spinning.png");
+}
+
+.box-fit {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/fitness.jpg");
+}
+
+.tittle-memberships {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.tittle-memberships span {
+    margin-left: 35%;
+    color: #E3EC39;
+    font-size: 5rem;
+}
+
+.container-member ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 400px;
+    margin: 6%;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.container-member h4 {
+    color:#E3EC39;
+    font-size: 30px;
+}
+
+.container-member p {
+    color:#ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.box-blackmember {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Black-membership.png");
+}
+
+.box-classicmember {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Classic-membership.png");
+}
+
+.box-onlyclasses {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Only-classes-member.png");
+}
+
+.tittle-ourstory {
+    display: flex;
+    flex-direction: column;
+    margin: 8%;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.tittle-ourstory span {
+    margin-left: 20%;
+    color: #E3EC39;
+    font-size: 5rem;
+}
+
+.container-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    height: 159px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    border:solid #97979700;
+    background-color: #E0E0E0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+    .container-sections {
+        width: 80%;
+    }
+
+    .container-aside {
+        display: flex;
+        flex-direction: column;
+        width: 336px;
+        padding-top: 3rem;
+        background-color: #D5DD3C;
+    }
+
+    .container-aside a {
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .container-dontsit {
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/DontsitgetFit.png");    
+    }
+
+    .container-text-home {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .container-dontsit h1 {
+        font-size: 100px;
+    }
+
+    .container-dontsit span {
+        font-size: 100px;
+    }
+}
+@media screen and (min-width: 605px) {    
+    .container-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 2rem;
+    }
+
+    .container-form input {
+        width: 190px;
+        height: 20px;
+    }
 }
