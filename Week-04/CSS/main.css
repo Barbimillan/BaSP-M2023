@@ -27,6 +27,10 @@
     text-decoration: none;
 }
 
+.container-info-aside {
+    display: none;
+}
+
 .container-sections {
     width: 100%;
 }
@@ -52,11 +56,6 @@
     font-size: 60px;
 }
 
-/* .container-tittles h1,h3 {
-    color: #ffffff;
-    font-size: 60px;
-} */
-
 .container-tittles span {
     position: relative;
     float: right;
@@ -74,20 +73,6 @@
     color: white;
     font-size: 20px;
 }
-
-/* .tittle-features {
-    display: flex;
-    flex-direction: column;
-    margin: 10%;
-    color: #ffffff;
-    font-size: 5rem;
-}
-
-.tittle-features span {
-    margin-left: 55%;
-    color: #E3EC39;
-    font-size: 5rem;
-} */
 
 .container-features ul {
     display: flex;
@@ -133,20 +118,6 @@
     color: #ffffff;
     font-size: 1.2rem;    
 }
-
-/* .tittle-contact {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    color: #ffffff;
-    font-size: 5rem;
-}
-
-.tittle-contact span {
-    margin-left: 70%;
-    color: #E3EC39;
-    font-size: 5rem;
-} */
 
 .container-contact {
     display: flex;
@@ -206,7 +177,7 @@
     display: flex;
     width: 90%;
     height: 132px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color:#E0E0E0
 }
 
@@ -219,27 +190,12 @@
     background-color: #E3EC39;
 }
 
-/* .tittle-activities {
-    display: flex;
-    flex-direction: column;
-    margin: 10%;
-    color: #ffffff;
-    font-size: 5rem;
-}
-
-.tittle-activities span {
-    margin-left: 45%;
-    color: #E3EC39;
-    font-size: 5rem;
-} */
-
 .cards-activities-up {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: auto;
-    /* width: 100%; */
+    margin: 2rem 0;
     gap: 2rem
 }
 
@@ -249,7 +205,6 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
-    /* width: 80%; */
     gap: 2rem;
 }
 
@@ -287,27 +242,20 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/fitness.jpg");
 }
 
-/* .tittle-memberships {
-    display: flex;
+.container-member ul{
+    display:flex;
     flex-direction: column;
-    margin-top: 10%;
-    color: #ffffff;
-    font-size: 5rem;
+    align-items: center;
+    gap: 2rem;
+
 }
-
-.tittle-memberships span {
-    margin-left: 35%;
-    color: #E3EC39;
-    font-size: 5rem;
-} */
-
 .container-member ul li{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 350px;
     height: 400px;
-    margin: 6%;
+    /* margin: 6%; */
     border-radius: 30px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,20 +285,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/Only-classes-member.png");
 }
 
-/* .tittle-ourstory {
-    display: flex;
-    flex-direction: column;
-    margin: 8%;
-    color: #ffffff;
-    font-size: 5rem;
-}
-
-.tittle-ourstory span {
-    margin-left: 20%;
-    color: #E3EC39;
-    font-size: 5rem;
-} */
-
 .container-story {
     display: flex;
     flex-direction: column;
@@ -374,8 +308,10 @@
     .container-aside {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 336px;
         padding-top: 3rem;
+        padding-bottom: 3rem;
         background-color: #D5DD3C;
     }
 
@@ -385,6 +321,12 @@
         color: #000000;
         font-size: 1rem;
         font-weight: bold;
+    }
+
+    .container-info-aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .container-dontsit {
@@ -409,10 +351,6 @@
         height: 500px;
     }
 
-    .container-activities {
-        gap: 3rem;
-    }
-
     .container-member ul {
         display: flex;
         flex-direction: column;
@@ -433,6 +371,7 @@
     .container-story {
         height: 165px;
         width: 597px;
+        padding: 2rem;
         font-size: 24px;
     } 
 }
@@ -464,6 +403,6 @@
     .container-message label {
         align-self: start;
         position: relative;
-        left: 3rem;   
+        left: 3rem;
     }
 }

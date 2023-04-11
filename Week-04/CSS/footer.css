@@ -58,3 +58,38 @@
     text-align: center;
     color: #666666;
 }
+
+@media screen and (min-width: 1024px) {
+    .container-info {
+        display: none;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 147px;
+        background-color: #323232;
+    }
+
+    .container-social {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-social a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .instagram {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .copyright {
+        padding-bottom: 0%;
+        color: #ffffff;
+    }
+}
+    
