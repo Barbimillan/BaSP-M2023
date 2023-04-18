@@ -1,4 +1,4 @@
-#header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,13 +22,13 @@
     display: none
 } 
 
-@media screen and (min-width:605px) {
+@media screen and (min-width:605px) and (max-width: 1024px) {
     .container-logo p {
         display: block;
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1025px) {
     .container-logo p {
         display: block;
     }

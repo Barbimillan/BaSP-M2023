@@ -1,20 +1,14 @@
 main {
     display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #535353;
 }
 
 .aside-mobile {
-    display: flex;
+    display: none;
     width: 100%;
     background-color: #212121;
-}
-
-.container-login {
-    display: flex;
-    padding: 5%;
-    justify-content: space-between;
-    text-transform: uppercase;
 }
 
 .aside-mobile a {
@@ -25,6 +19,29 @@ main {
     font-size: 35px;
     color: #ffffff;
     text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 20px;
+    width: 60%;
+}
+
+.container-login .button {
+    width: 30%;
 }
 
 .container-info-aside {
@@ -97,7 +114,7 @@ main {
 
 .description-features {
     color: #ffffff;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
 }
 
 .container-contact {
@@ -282,7 +299,7 @@ main {
 }
 
 
-@media screen and (min-width: 605px and max-width: 1024px) {    
+@media screen and (min-width: 605px) and (max-width: 1024px) {
     .container-form {
         display: flex;
         flex-direction: row;
@@ -313,20 +330,20 @@ main {
     }
 }
 
-@media screen and (min-width:1025px) {
-    .container-sections {
-        width: 80%;
+@media screen and (min-width: 1025px) {
+    main {
+        flex-direction: row;
     }
 
     .aside-mobile {
         display: none;
     }
-    
+
     .aside-desktop {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 336px;
+        width: 20%;
         padding-top: 3rem;
         padding-bottom: 3rem;
         background-color: #D5DD3C;
@@ -338,6 +355,14 @@ main {
         color: #000000;
         font-size: 1rem;
         font-weight: bold;
+    }
+
+    .container-login {
+        display: none;
+    }
+
+    .container-sections {
+        width: 80%;
     }
 
     .container-info-aside {
