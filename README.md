@@ -13,13 +13,18 @@ In this step, we did a GitHub repository that include a HTML document with the l
 This week, we gave the style, with a CSS external file, to the HTML document that we did in the second week. 
 
 ### Week 04
-We did again a CSS external file to the HTML document, but in this time desing mobile first to make it a responsive document
+We did again a CSS external file to the HTML document, but in this time desing mobile first to make it a responsive document.
+
+### Week 05
+This week, we practiced with different exercises of Javascript. 
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://barbimillan.github.io/BaSP-M2023/Week-04/index.html)
 
+https://barbimillan.github.io/BaSP-M2023/Week-05/index.html
+
 ## Tech Stack
-**Client:** HTML 5 y CSS 3
+**Client:** HTML 5, CSS 3 y Javascript
 
 ## Authors
 Barbara Millan

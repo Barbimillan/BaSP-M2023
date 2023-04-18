@@ -1,4 +1,4 @@
-.container-footer {
+#footer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -59,16 +59,27 @@
     color: #666666;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 605px and max-width: 1024px) {
+    .container-social {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-info {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1025px) {
     .container-info {
         display: none;
     }
 
-    .container-footer {
+    #footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        height: 147px;
         background-color: #323232;
     }
 

@@ -1,8 +1,7 @@
-.container-header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 154px;
     padding: 0 30px;
     background-color: #323232 ;
 }
@@ -23,6 +22,12 @@
     display: none
 } 
 
+@media screen and (min-width:605px) {
+    .container-logo p {
+        display: block;
+    }
+}
+
 @media screen and (min-width:1024px) {
     .container-logo p {
         display: block;
@@ -36,8 +41,8 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 164px;
-        height: 66px;
+        width: 158px;
+        height: 60px;
         border-radius: 10px;
         background-color: white; 
         color: #000000;

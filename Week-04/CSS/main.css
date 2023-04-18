@@ -1,23 +1,23 @@
-.container-main {
+main {
     display: flex;
     width: 100%;
     background-color: #535353;
 }
 
-.container-aside {
-    display: none;
-    width: 20%;
+.aside-mobile {
+    display: flex;
+    width: 100%;
     background-color: #212121;
 }
 
 .container-login {
-    display: none;
+    display: flex;
     padding: 5%;
     justify-content: space-between;
     text-transform: uppercase;
 }
 
-.container-aside a {
+.aside-mobile a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,8 +268,9 @@
 .container-story {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
     width: 320px;
     height: 159px;
     margin: 2rem auto;
@@ -281,7 +282,7 @@
 }
 
 
-@media screen and (min-width: 601px) {    
+@media screen and (min-width: 605px and max-width: 1024px) {    
     .container-form {
         display: flex;
         flex-direction: row;
@@ -312,12 +313,16 @@
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1025px) {
     .container-sections {
         width: 80%;
     }
 
-    .container-aside {
+    .aside-mobile {
+        display: none;
+    }
+    
+    .aside-desktop {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -327,7 +332,7 @@
         background-color: #D5DD3C;
     }
 
-    .container-aside a {
+    .aside-desktop a {
         text-align: center;
         text-decoration: none;
         color: #000000;
@@ -371,19 +376,20 @@
 
     .container-member ul li {
         width: 480px;
-        height: 575px ;
+        height: 575px;
     }
 
     .container-ourstory {
         display: flex;
         flex-direction: row;
         align-items:center;
+        margin: 0 0.9rem;
     }
 
     .container-story {
         height: 165px;
         width: 597px;
-        padding: 2rem;
+        padding: 1.2rem;
         font-size: 24px;
-    } 
+    }
 }

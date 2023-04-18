@@ -22,3 +22,13 @@ body {
     color: #E3EC39;
     font-size: 60px;
 }
+
+@media screen and (min-width: 1025px) {
+    .container-tittles {
+        margin: 6rem 0;
+    }
+
+    .container-tittles span {
+        top: 5rem;
+    }
+}
