@@ -18,10 +18,14 @@ We did again a CSS external file to the HTML document, but in this time desing m
 ### Week 05
 This week, we practiced with different exercises of Javascript. 
 
+### Week 06
+In this step, we created Sing Up and Login forms with HTML and CSS, then we gave validations with Javascript. 
+
+
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://barbimillan.github.io/BaSP-M2023/Week-04/index.html)
 
-https://barbimillan.github.io/BaSP-M2023/Week-05/index.html
+https://barbimillan.github.io/BaSP-M2023/Week-06/views/index.html
 
 ## Tech Stack
 **Client:** HTML 5, CSS 3 y Javascript
