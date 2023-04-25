@@ -21,7 +21,7 @@ function validatePassword() {
         return false;
     }
     if (passwordInput.value.length < 8) {
-        errorMessage[1] = "More than 8 letters required"; 
+        errorMessage[1] = "More than 8 characters required"; 
         return false;
     }
     return true;

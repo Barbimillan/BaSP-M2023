@@ -1,9 +1,22 @@
 var errorMessage = [];
 
 var nameInput = document.getElementById("name");
+function validarLetras(nameInput) {
+    for (var f = 0; f < nameInput.length; f++) {
+      if (!(/[a-zA-Z]/).test(nameInput[f])) {
+        return false;
+      }
+    }
+    return true;
+}
+
 function validateName() {
     if (nameInput.value == "" || nameInput.value == null) {
         errorMessage[0] = "Name is required";
+        return false;
+    }
+    if (!validarLetras(nameInput.value)) {
+        errorMessage[0] = "Only letters are allowed";
         return false;
     }
     if (nameInput.value.length < 3) {
@@ -14,9 +27,22 @@ function validateName() {
 }
 
 var surnameInput = document.getElementById("surname");
+function validarLetrasS(surnameInput) {
+    for (var f = 0; f < surnameInput.length; f++) {
+      if (!(/[a-zA-Z]/).test(surnameInput[f])) {
+        return false;
+      }
+    }
+    return true;
+}
+
 function validateSurname() {
     if (surnameInput.value == "" || surnameInput.value == null) {
         errorMessage[1] = "Surname is required";
+        return false;
+    }
+    if (!validarLetrasS(surnameInput.value)) {
+        errorMessage[1] = "Only letters are allowed";
         return false;
     }
     if (surnameInput.value.length < 3) {
@@ -31,6 +57,10 @@ function validateId() {
     if (idInput.value == "" || idInput.value == null) {
         errorMessage[2] = "ID is required";  
         return false
+    }
+    if (isNaN(Number(idInput.value))) {
+        errorMessage[2] = "Id must be a number";
+        return false;
     }
     if (idInput.value.length < 7) {
         errorMessage[2] = "More than 7 numbers required"; 
@@ -54,12 +84,12 @@ function validatePhone() {
         errorMessage[4] = "Phone is required";
         return false;
     }
-    if (phoneInput.value.length < 10) {
-        errorMessage[4] = "More than 10 numbers required"; 
+    if (isNaN(Number(phoneInput.value))) {
+        errorMessage[4] = "Phone must be a number";
         return false;
     }
-    if (!validatenumber(phoneInput)) {
-        errorMessage[4] = "This not a number"
+    if (phoneInput.value.length !== 10) {
+        errorMessage[4] = "Phone required 10 numbers"; 
         return false;
     }
     return true;
@@ -84,7 +114,7 @@ function validateLocation() {
         errorMessage[6] = "Location is required";
         return false;
     }
-    if (adressInput.value.length < 3) {
+    if (locationInput.value.length < 3) {
         errorMessage[6] = "More than 3 letters required"; 
         return false;
     }
@@ -94,15 +124,15 @@ function validateLocation() {
 var zipCodeInput = document.getElementById("zipCode");
 function validateZipCode() {
     if (zipCodeInput.value == "" || zipCodeInput.value == null) {
-        errorMessage[7] = "Zip code is required";
+        errorMessage[7] = "Zip Code is required";
         return false;
     }
-    if (zipCodeInput.value.length >= 4 && zipCodeInput.value.length <= 5) {
-        errorMessage[7] = "Between 4 and 5 numbers required"; 
+    if (isNaN(Number(zipCodeInput.value))) {
+        errorMessage[7] = "Zip Code must be a number";
         return false;
     }
-    if (!validatenumber(zipCodeInput)) {
-        errorMessage[7] = "This not a number";
+    if (zipCodeInput.value.length < 4 || zipCodeInput.value.length > 5) {
+        errorMessage[7] = "Zip Code must have 4 or 5 numbers"; 
         return false;
     }
     return true;
