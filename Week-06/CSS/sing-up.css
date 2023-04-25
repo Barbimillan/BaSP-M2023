@@ -64,6 +64,7 @@ main {
     justify-content: center;
     margin: 2rem auto;
     width: 85%;
+    max-width: 60rem;
     background-color: #E3EC39;
     opacity: 90%;
     border: solid #97979700;

@@ -101,6 +101,13 @@ main {
     background-color: #ffffff;
 }
 
+.question {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #000000;
+}
+
 #footer {
     display: flex;
     flex-direction: column;
