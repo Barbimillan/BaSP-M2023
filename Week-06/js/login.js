@@ -45,3 +45,7 @@ for (let i = 0; i < totalInputs.length; i++) {
     }
   })
 }
+var submitButton = document.getElementById("submit")
+submitButton.onclick = function(event) {
+    event.preventDefault()
+}

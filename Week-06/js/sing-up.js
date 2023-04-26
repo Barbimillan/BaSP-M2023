@@ -59,7 +59,7 @@ function validateId() {
         return false
     }
     if (isNaN(Number(idInput.value))) {
-        errorMessage[2] = "Id must be a number";
+        errorMessage[2] = "Only numbers are allowed";
         return false;
     }
     if (idInput.value.length < 7) {
@@ -85,7 +85,7 @@ function validatePhone() {
         return false;
     }
     if (isNaN(Number(phoneInput.value))) {
-        errorMessage[4] = "Phone must be a number";
+        errorMessage[4] = "Only numbers are allowed";
         return false;
     }
     if (phoneInput.value.length !== 10) {
@@ -128,7 +128,7 @@ function validateZipCode() {
         return false;
     }
     if (isNaN(Number(zipCodeInput.value))) {
-        errorMessage[7] = "Zip Code must be a number";
+        errorMessage[7] = "Only numbers are allowed";
         return false;
     }
     if (zipCodeInput.value.length < 4 || zipCodeInput.value.length > 5) {
