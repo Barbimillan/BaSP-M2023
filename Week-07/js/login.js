@@ -38,10 +38,55 @@ for (let i = 0; i < totalInputs.length; i++) {
       divError[i].innerHTML = errorMessage[i] 
       divError[i].style.display = "Block"
     } 
-
     totalInputs[i].onfocus = function() {
       totalInputs[i].style.border = "none"
       divError[i].style.display = "none"
     }
   })
+}
+
+var submitButton = document.getElementById("submit");
+var errorMessages = "";
+submitButton.onclick = function(event) {
+    event.preventDefault();
+    var allInputsValid = true;
+    for (let i = 0; i < totalInputs.length; i++) {
+        if (!totalValidation[i]()) {
+            totalInputs[i].style.border = "solid red 2px";
+            divError[i].innerHTML = errorMessage[i];
+            divError[i].style.display = "block";
+            errorMessages += errorMessage[i] + ", ";
+            allInputsValid = false;
+        } else {
+            totalInputs[i].style.border = "none";
+            divError[i].style.display = "none";
+        }   
+    } if (!allInputsValid) {
+        alert(errorMessages.slice(0, -2));
+        return false;
+    } else {
+        alert("Successfully");
+        return true;
+    }
+}
+
+console.log(totalInputs);
+
+fetch(url = 'https://api-rest-server.vercel.app/login?email=rose@radiumrocket.com&password=BaSProfessional1')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Login invalid');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+
+function totalValidation(valor) {
+  return valor.trim() !== '';
 }
