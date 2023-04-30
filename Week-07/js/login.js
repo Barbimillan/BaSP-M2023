@@ -48,7 +48,7 @@ for (let i = 0; i < totalInputs.length; i++) {
 var submitButton = document.getElementById("submit");
 var errorMessages = "";
 submitButton.onclick = function(event) {
-    event.preventDefault();
+  event.preventDefault();
     var allInputsValid = true;
     for (let i = 0; i < totalInputs.length; i++) {
         if (!totalValidation[i]()) {
@@ -65,28 +65,18 @@ submitButton.onclick = function(event) {
         alert(errorMessages.slice(0, -2));
         return false;
     } else {
-        alert("Successfully");
-        return true;
+      var api = `https://api-rest-server.vercel.app/login?email=${emailInput.value}&password=${passwordInput.value}`
+      fetch(api)
+        .then((response) =>response.json())
+        .then((data) => {
+          if (data.status==="success") {
+            alert(data);
+            console.log(data)
+          } else {
+            alert(data.msg);
+          }
+        })
+        .catch((error) => console.log(error));
+          return true;
     }
-}
-
-console.log(totalInputs);
-
-fetch(url = 'https://api-rest-server.vercel.app/login?email=rose@radiumrocket.com&password=BaSProfessional1')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Login invalid');
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error(error);
-  });
-
-
-function totalValidation(valor) {
-  return valor.trim() !== '';
 }

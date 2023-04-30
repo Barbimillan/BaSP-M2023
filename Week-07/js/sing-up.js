@@ -222,24 +222,31 @@ submitButton.onclick = function(event) {
         alert(errorMessages.slice(0, -2));
         return false;
     } else {
-        alert("Successfully");
-        return true;
+        var api = `https://api-rest-server.vercel.app/signup?name=${nameInput.value}&lastName=${surnameInput.value}&dni=${idInput.value}&dob=${dateInput}&phone=${phoneInput.value}&address=${adressInput.value}&city=${locationInput.value}&zip=${zipCodeInput.value}&email=${emailInput.value}&password=${passwordInput.value}`
+        fetch(api)
+            .then((response) =>response.json())
+            .then((data) => {
+                if (data.status==="success") {
+                alert(data);
+                console.log(data)
+                } else {
+                alert(data.msg);
+                }
+            })
+            .catch((error) => console.log(error));
+                return true;
     }
 }
 
-fetch(url = 'https://api-rest-server.vercel.app/signup')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Register invalid');
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error(error);
-  });
-function totalValidation(valor) {
-    return valor.trim() !== '';
-}
+// localStorage.getItem(nameInput);
+// localStorage.getItem(surnameInput);
+// localStorage.getItem(idInput);
+// localStorage.getItem(dateInput);
+// localStorage.getItem(phoneInput);
+// localStorage.getItem(adressInput);
+// localStorage.getItem(locationInput);
+// localStorage.getItem(zipCodeInput);
+// localStorage.getItem(passwordInput);
+// localStorage.getItem(repeatPasswordInput);
+
+
