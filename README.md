@@ -19,8 +19,10 @@ We did again a CSS external file to the HTML document, but in this time desing m
 This week, we practiced with different exercises of Javascript. 
 
 ### Week 06
-In this step, we created Sing Up and Login forms with HTML and CSS, then we gave validations with Javascript. 
+In this step, we created Sing Up and Login forms with HTML and CSS, then we gave validations with Javascript. Also we add a requirements document whit differents validations for the input.
 
+### Week 07
+In week seven, we created an HTTP query using the Javascript Fetch method for the Login and Sing Up form. For the last one, we also did a Local Storage.
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://barbimillan.github.io/BaSP-M2023/Week-04/index.html)
