@@ -229,7 +229,7 @@ var errorMessages = "";
 
 submitButton.onclick = function (event) {
   event.preventDefault();
-  for (let i = 0; i < totalInputs.length; i++) {
+  for (var i = 0; i < totalInputs.length; i++) {
     if (!totalValidation[i]()) {
       totalInputs[i].style.border = "solid red 2px";
       divError[i].innerHTML = errorMessage[i];
@@ -244,11 +244,36 @@ submitButton.onclick = function (event) {
   var month = (newDate.getMonth() + 1).toString().padStart(2, "0");
   var year = newDate.getFullYear();
   let dateParam = month + "/" + day + "/" + year;
-  var api = `https://api-rest-server.vercel.app/signup?name=${nameInput.value}&lastName=${surnameInput.value}&dni=${idInput.value}&dob=${dateParam}&phone=${phoneInput.value}&address=${adressInput.value}&city=${locationInput.value}&zip=${zipCodeInput.value}&email=${emailInput.value}&password=${passwordInput.value}`;
-  fetch(api)
+  fetch(
+    "https://api-rest-server.vercel.app/signup?" +
+      "name=" +
+      nameInput.value +
+      "&lastName=" +
+      surnameInput.value +
+      "&dni=" +
+      idInput.value +
+      "&dob=" +
+      dateParam +
+      "&phone=" +
+      phoneInput.value +
+      "&address=" +
+      adressInput.value +
+      "&city=" +
+      locationInput.value +
+      "&zip=" +
+      zipCodeInput.value +
+      "&email=" +
+      emailInput.value +
+      "&password=" +
+      passwordInput.value
+  )
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
+        var valuesInput = "";
+        for (const property in data.data) {
+          valuesInput += property + ": " + data.data[property] + "\n";
+        }
         localStorage.setItem("name", nameInput.value);
         localStorage.setItem("surname", surnameInput.value);
         localStorage.setItem("id", idInput.value);
@@ -260,10 +285,12 @@ submitButton.onclick = function (event) {
         localStorage.setItem("email", emailInput.value);
         localStorage.setItem("password", passwordInput.value);
         localStorage.setItem("reppassword", repeatPasswordInput.value);
-        alert(data.msg);
+        modal.style.display = "flex";
+        image.setAttribute("src", "../../Assets/Images/succes.png");
+        modalAlert.innerText = data.msg + "\n" + valuesInput;
         console.log(data.msg);
       } else {
-        let backerror = "";
+        var backerror = "";
         data.errors.forEach((error) => {
           backerror += "\n" + error.msg;
         });
@@ -271,7 +298,9 @@ submitButton.onclick = function (event) {
       }
     })
     .catch((error) => {
-      alert(error);
+      modal.style.display = "flex";
+      image.setAttribute("src", "../../Assets/Images/Error.png");
+      modalAlert.innerText = error;
     });
 };
 window.onload = () => {
@@ -286,4 +315,16 @@ window.onload = () => {
   emailInput.value = localStorage.getItem("email");
   passwordInput.value = localStorage.getItem("password");
   repeatPasswordInput.value = localStorage.getItem("reppassword");
+};
+var modal = document.getElementById("myModal");
+var span = document.querySelector(".close");
+var modalAlert = document.getElementById("content");
+var image = document.getElementById("image");
+span.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 };
