@@ -188,7 +188,7 @@ main {
 .modal-content {
   margin: 15% auto;
   padding: 50px 50px;
-  width: 400px;
+  width: 200px;
   background-color: #fefefe;
   border: 1px solid #888;
   text-align: center;
@@ -231,6 +231,10 @@ main {
   .container-info {
     display: flex;
     flex-direction: row;
+  }
+
+  .modal-content {
+    width: 300px;
   }
 }
 
@@ -295,5 +299,9 @@ main {
   .copyright {
     padding-bottom: 0%;
     color: #ffffff;
+  }
+
+  .modal-content {
+    width: 400px;
   }
 }
